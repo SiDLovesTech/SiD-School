@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="shortcut icon" href="Tab_icon.JPG" type="image/x-icon" />
-  <title>SID Academy</title>
+  <title>Contact Us Anyday </title>
 <style>
 ul {
     list-style-type: none;
@@ -55,40 +55,63 @@ li.dropdown {
     display: block;
 }
 
+input, label, textarea {
+  width: 300px;
+  height: 50px;
+  border: 2px solid grey;
+  color: White;
+  background-color: Black;
+  font-size: 25px;
+}
 body {
   background-color: Black;
 }
 
-.fct {
-  color: White;
+
+label {
+  font-size: 30px
 }
-img {
-  width: 1300px;
-  height: 1000px;
+
+textarea {
+  width: 300px;
+  height: 120px;
 }
+
 </style>
 </head>
+
 <body>
 
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="contact.html">Contact</a></li>
   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Learn</a>
+    <a href="javascript:void(0)" class="dropbtn">Learn to code↓</a>
     <div class="dropdown-content">
       <a href="lhtml.html">HTML</a>
-      <a href="lcss.html">CSS</a>
-      <a href="javascript:void(1)" class="dropbtnn">Cubing</a>
-      <div class="dropdown-contents">
-        <a href="">3x3</a>
-        <a href="">2x2</a>
-      </div>
+	    <a href="lcss.html">CSS</a>
     </div>
   </li>
   <li>
   	<a href="login.html">Login<a/>
   	<a href="signup.html">Sign Up</a>
 	</ul>
+</li>
 
+<center><form action="https://formspree.io/lcffqa@gmail.com"
+method="POST">
+  <br><br>
+  <input type="text" name="name" placeholder="Name"><br>
+  <label>Have an account?</label><br>
+  <input type="text" name="Username" placeholder="Username"><br>
+  <label>Don't have an account?</label><br>
+  <input type="email" name="Email" placeholder="Email"><br>
+  <label>Subject/Details</label><br>
+  <textarea name="text"></textarea><br>
+  <input type="submit" name="Submit" value="Submit">
+</form>
+<a href="mailto:lcffqa@gmail.com?Subject=LearnCodingForFreeQuestion">Email Us Directly</a>
+<code>h1</code>
+</center>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<DOCTYPE html>
+  <head>
+    <link rel="shortcut icon" href="Tab_icon.JPG" type="image/x-icon" />
+    <style>
+      .rthb {
+        background-color: Black;
+        height: 100px;
+        width: 200px;
+      }
+      .rtha, input, button {
+        font-size: 30px;
+        background-color: Black;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border: 5px solid White;
+      }
+      .rtha:hover {
+        background-color: Red;
+        color: Black;
+      }
+
+      body {
+        background-color: Black;
+      }
+
+    </style>
+  </head>
+
+  <body>
+      <center><a href="index.html" class="rtha">Return To Home</a></center>
+
+      <form action="https://formspree.io/lcffqa@gmail.com"
+      method="POST">
+        <center>
+          <br>
+        <input type="text" placeholder="Username" class="u" id="Username" name="Username" required><br> <br>
+        <input type="text" placeholder="Email" class="e" name="Email" required><br> <br>
+        <input type="password" placeholder="Password" id="password" class="p" name="Password" required><br> <br>
+        <input type="password" placeholder="Confirm Password" id="confirm_password" class="cp" required><br> <br>
+        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </center>
+    </fieldset>
+
+    <script>
+    var password = document.getElementById("password")
+, confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+if(password.value != confirm_password.value) {
+  confirm_password.setCustomValidity("Passwords aren't the same");
+} else {
+  confirm_password.setCustomValidity('');
+}
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+    </script>
+
+  <body>

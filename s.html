@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="shortcut icon" href="Tab_icon.JPG" type="image/x-icon" />
+    <style type="text/css">
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+    </style>
+
+  </head>
+  <body>
+<center>
+    <h3> Click bellow to practice HTML, CSS and JavaScript!!! </h3>
+    <button onclick="window.location.href='t.html'" style="width:auto;" class="lasb" align="right">Practice</button></center>
+    <script>
+    function setCookie(cname,cvalue,exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function checkCookie() {
+        var user=getCookie("username");
+        if (user != "") {
+            alert("Welcome back " + user + "Have Fun Coding");
+        } else {
+          alert("Hi")
+           user = prompt("Please enter your name:","");
+           if (user != "" && user != null) {
+               setCookie("username", user, 30);
+           }
+        }
+    }
+    </script>
+  </body>
+</html>
