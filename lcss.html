@@ -16,7 +16,7 @@ li {
     float: left;
 }
 
-li a, .dropbtn, a {
+li .barlink, .dropbtn, .barlink {
     display: inline-block;
     color: white;
     text-align: center;
@@ -24,7 +24,7 @@ li a, .dropbtn, a {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn, a:hover {
+li .barlink:hover, .dropdown:hover .dropbtn, .barlink:hover {
     background-color: red;
 }
 
@@ -41,54 +41,62 @@ li.dropdown {
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content .barlink {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
-.fh1op {
-    font-size: 50px;
-    background-color: black;
-    padding-left: 100px;
-    padding-right: 0px;
-    padding-top: 0px;
-    color: White;
-  }
 
-.p {
-  background-color: Red;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content .barlink:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+body {
+  background-color: White;
+}
+
+.fct {
+  color: White;
+}
+img {
+  width: 1300px;
+  height: 1000px;
+}
+.p {
+  background-color: Red;
+}
+
+
+
 </style>
 </head>
 <body>
 
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Learn</a>
+<ul>
+  <li class="p"><a class="barlink" href="index.html">Home</a></li>
+  <li><a class="barlink" href="contact.html">Contact</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Learn</a>
+    <div class="dropdown-content">
+      <a class="barlink" href="lhtml.html">HTML</a>
+      <a class="barlink" href="lcss.html">CSS</a>
+      <a class="barlink" href="javascript:void(0)" class="dropbtn">Cubing</a>
       <div class="dropdown-content">
-        <a href="lhtml.html">HTML</a>
-        <a  class="p" href="lcss.html">CSS</a>
-        <a href="javascript:void(1)" class="dropbtnn">Cubing</a>
-        <div class="dropdown-contents">
-          <a href="three.html">3x3</a>
-          <a href="two.html">2x2</a>
-        </div>
+        <a class="barlink" href="three.html">3x3</a>
+        <a class="barlink" href="two.html">2x2</a>
       </div>
-    </li>
-    <li>
-    	<a href="login.html">Login<a/>
-    	<a href="signup.html">Sign Up</a>
-  	</ul>
+    </div>
+  </li>
+  <li>
+  	<a class="barlink" href="login.html">Login<a/>
+  	<a class="barlink" href="signup.html">Sign Up</a>
+    <a class="barlink" href="s.html">Practice</a>
+	</li>
+</ul>
 <h1 class="fh1op">Learn, CSS. Today ....For free!!!</h1>
 </body>
 </html>
