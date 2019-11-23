@@ -71,8 +71,8 @@ img {
 }
     .box {
       background: White;
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       position: relative;
       animation-name: circleani;
       animation-duration: 3s;
@@ -104,11 +104,28 @@ img {
     100% {color: Magenta;}
 }
 
+@keyframes invert {
+
+    0% {background-color: Black;}
+    50% {background-color: Blue;}
+    100% {background-color: Black;}
+}
+
+.tb {
+  animation-name: invert;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#btni, #btnib {
+  background-color: Black;
+}
+
 </style>
 
 </head>
 <body>
-
+<div class="tb">
 <ul>
   <li class="p"><a class="barlink" href="index.html">Home</a></li>
   <li><a class="barlink" href="contact.html">Contact</a></li>
@@ -128,13 +145,15 @@ img {
   	<a class="barlink" href="login.html">Login<a/>
   	<a class="barlink" href="signup.html">Sign Up</a>
     <a class="barlink" href="s.html">Practice</a>
-    <button class="barlink" id="btn">Invert</button>
+    <button class="barlink" id="btni">Invert</button>
+    <button class="barlink" id="btnib">Invert Back</button>
 	</li>
 </ul>
 
 <h1 class="wtss">Welcome to Sid School</h1>
 <div class="box">
-  <center><h1>SiD</h1></center>
+  <center><h2></h2></center>
+</div>
 </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -143,9 +162,16 @@ function invert() {
     $(".wtss").css("color", "white")
     $("body").css("background-color", "black")
 }
-  $('#btn').on("click", function() {
+  $('#btni').on("click", function() {
       invert();
   });
+  function invertb() {
+      $(".wtss").css("color", "black")
+      $("body").css("background-color", "white")
+  }
+    $('#btnib').on("click", function() {
+        invertb();
+    });
 </script>
 </body>
 </html>
