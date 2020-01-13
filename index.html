@@ -87,23 +87,6 @@ img {
   100% {background-color: White; left:0px; top: 0px; border-radius: 50% 50% 50% 50%;}
 }
 
-.wtss {
-  animation-name: wtss;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes wtss {
-
-    0% {color: Red;}
-    16% {color: Orange;}
-    32% {color: Yellow;}
-    48% {color: Green;}
-    64% {color: Blue;}
-    80% {color: Purple;}
-    100% {color: Magenta;}
-}
-
 @keyframes invert {
 
     0% {background-color: Black;}
@@ -121,6 +104,10 @@ img {
   background-color: Black;
 }
 
+#ct {
+  color: Black;
+}
+
 </style>
 
 </head>
@@ -132,9 +119,11 @@ img {
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Learn</a>
     <div class="dropdown-content">
+      <a class="barlink" href="lhtml.html">HTML</a>
+      <a class="barlink" href="lcss.html">CSS</a>
+      <a class="barlink" href="cubing.html">Cubing</a>
         <a class="barlink" href="three.html">3x3</a>
         <a class="barlink" href="two.html">2x2</a>
-      </div>
     </div>
   </li>
   <li>
@@ -146,28 +135,30 @@ img {
 	</li>
 </ul>
 
-<h1 class="wtss">Welcome to Sid School</h1>
-<div class="box">
-  <center><h2></h2></center>
-</div>
 </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
 function invert() {
-    $(".wtss").css("color", "white")
+    $("body").css("color", "white")
     $("body").css("background-color", "black")
 }
   $('#btni').on("click", function() {
       invert();
   });
   function invertb() {
-      $(".wtss").css("color", "black")
+      $("body").css("color", "black")
       $("body").css("background-color", "white")
   }
     $('#btnib').on("click", function() {
         invertb();
     });
+
+  function cc() {
+  }
 </script>
+
+<h1>Welcome to Sid School</h1>
+
 </body>
 </html>
